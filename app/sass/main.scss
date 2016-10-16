@@ -1,0 +1,898 @@
+@import 'parts/fonts';
+
+.wrapper-container {
+  background: url('../img/bg_main.png');
+  background-position: 0 0;
+  background-repeat: repeat;
+  &__main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+/* main header */
+
+.main-header {
+  &__top-block {
+    min-height: 125px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &__logo-container {
+      flex: 1 1 20%;
+      display: flex;
+      &__link {
+        display: block;
+        margin: auto;
+      }
+    }
+    &__content {
+      flex: 1 1 60%;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      &__top-title {
+        font-family: 'Scada', sans-serif;
+        font-size: 26px;
+        color: #353535;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      &__list {
+        border-top: 1px solid #353535;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 5px;
+        margin: 0;
+        &__item {
+          position: relative;
+          list-style-type: none;
+          padding-right: 15px;
+          color: #da2b32;
+          margin: 0 5px;
+          &:after {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 5px;
+            background: #da2b32;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+          &:last-child {
+            list-style-type: none;
+            &:after {
+              display: none;
+            }
+          }
+          &__link {
+            font-family: 'Scada', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #da2b32;
+            text-decoration: none;
+            &:focus,
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    &__additional-block {
+      flex: 1 1 20%;
+      height: 125px;
+    }
+  }
+}
+
+.main-navigation {
+  background: #000;
+  min-height: 45px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: flex-end;
+
+  &__list {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 10px 5px 0 5px;
+    margin: auto 0 1px 0;
+    &__item {
+      position: relative;
+      list-style: none;
+      display: inline-block;
+      padding: 0 10px 0 5px;
+      text-align: center;
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 1px;
+        width: 2px;
+        background: #fff;
+        height: 15px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      &__link {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        font-family: 'Scada', sans-serif;
+        text-align: center;
+        font-size: 16px;
+        padding: 0 0 10px 0;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 4px solid transparent;
+        &:focus,
+        &:hover {
+          border-bottom: 4px solid red;
+        }
+      }
+    }
+  }
+}
+
+/* section */
+
+.section-slide {
+  padding: 50px 10px;
+  position: relative;
+  background-image: url('../img/image-1.jpg');
+  background-size: 100%;
+  background-position: 0% 45%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  .section-slide__content-wrapper {
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    &__title {
+      font-family: 'Scada', sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1;
+      text-transform: uppercase;
+      padding: 5px 0;
+      margin: 5px 0;
+
+      &--color-orange {
+        color: #ffce12;
+      }
+    }
+    &__description {
+      font-family: 'Scada', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.5;
+      padding: 5px 0;
+      margin: 5px 0;
+    }
+  }
+}
+
+.section-address-date {
+  padding: 25px 10px;
+  background: #969799;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__address-block {
+    flex: 1 1 60%;
+    padding: 0 5px;
+    text-align: right;
+    font-family: 'Scada', sans-serif;
+    font-size: 30px;
+    line-height: 1.12;
+    color: #fff;
+    font-weight: bold;
+
+    &__address-home {
+      font-size: 36px;
+    }
+  }
+  &__icon-block {
+    flex: 0 0 130px;
+    margin: 0 10px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    &__image {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__date-block {
+    flex: 1 1 60%;
+    padding: 0 5px;
+    text-align: left;
+    font-family: 'Scada', sans-serif;
+    font-size: 30px;
+    line-height: 1.12;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.section-subscription {
+  background: #18485e;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  &__icon-block {
+    flex: 1 1 90px;
+    display: flex;
+    align-content: center;
+  }
+  &__content {
+    flex: 1 1 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+      font-size: 30px;
+      font-family: 'Scada', sans-serif;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1;
+      text-align: left;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &__input {
+        box-sizing: border-box;
+        padding: 0;
+        border: 1px solid rgb(53, 53, 53);
+        background-color: rgb(255, 255, 255);
+        height: 48px;
+        width: 100%;
+        max-width: 250px;
+
+        font-size: 24px;
+        font-family: 'Scada', sans-serif;
+        color: rgb(150, 151, 153);
+        line-height: 1.2;
+        text-align: center;
+      }
+      &__btn {
+        box-sizing: border-box;
+        padding: 0;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(255, 206, 18);
+        height: 48px;
+        width: 100%;
+        max-width: 250px;
+
+        font-size: 24px;
+        font-family: 'Scada', sans-serif;
+        color: rgb(53, 53, 53);
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.2;
+        transition: all 0.3s ease;
+
+        &:focus,
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.section-practice-for {
+  padding: 20px 5px;
+  background: #e7e2e2;
+  &__title {
+    font-size: 30px;
+    font-family: "Scada";
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+}
+
+.practice-for-list {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  &__item {
+    box-sizing: border-box;
+    margin: 0;
+    flex: 1 1 30%;
+    max-width: 300px;
+    padding: 10px 15px;
+    &__icon-block {
+      display: block;
+      box-sizing: border-box;
+      margin: 0 auto;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      overflow: hidden;
+
+      &__image {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    &__title {
+      padding: 5px 0;
+      font-family: 'Scada', sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+      text-align: center;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: uppercase;
+      color: #e74c3c;
+    }
+    &__description {
+      padding: 5px 0;
+      font-family: 'Scada', sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+      text-align: center;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: none;
+      color: #353535;
+    }
+  }
+}
+
+.block-message {
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #e74c3c;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  &--time-block {
+    max-width: 730px;
+  }
+  &--gift-block {
+    max-width: 960px;
+  }
+  &__image-wrap {
+    box-sizing: border-box;
+    flex: 0 0 130px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    &__image {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    padding: 0 20px;
+    font-family: 'Scada', sans-serif;
+    font-size: 24px;
+    color: #e74c3c;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.section-schedule {
+  padding: 20px 5px 10px;
+  background: #969799;
+
+  &__content {
+    font-family: 'Scada', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+/* columns block languages-lesson */
+
+.lesson-schedule-columns {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  &__item {
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 5px 15px;
+    border-right: 1px solid #fff;
+    &:last-child {
+      border-right: none;
+    }
+    &__flag-wrap {
+      max-width: 150px;
+      margin: 0 auto;
+      &__image {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    &__title-lesson {
+      display: block;
+      margin: 0 auto;
+      max-width: 170px;
+      font-family: 'Scada', sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+    &__date-lesson {
+      font-family: 'Scada', sans-serif;
+      text-align: center;
+      color: #ffce12;
+      &__date {
+        font-family: 'Scada', sans-serif;
+        font-size: 30px;
+        color: #ffce12;
+        line-height: 1;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      &__time {
+        font-family: 'Scada', sans-serif;
+        font-size: 24px;
+        color: #ffce12;
+        line-height: 1;
+        font-weight: bold;
+        text-transform: none;
+      }
+    }
+    &__level {
+      font-family: 'Scada', sans-serif;
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      line-height: 1;
+      font-weight: bold;
+      text-transform: none;
+    }
+    &__description-lesson {
+      max-width: 230px;
+      margin: 0 auto;
+      padding: 10px 5px 5px;
+      &__title-description {
+        display: block;
+        font-family: 'Scada', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        color: #ffce12;
+        line-height: 1;
+        font-weight: bold;
+      }
+      &__text {
+        margin: 0;
+        padding: 0;
+        font-family: 'Scada', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        line-height: 1;
+        font-weight: bold;
+      }
+    }
+    &__btn-wrap {
+      margin: auto 0 0 0;
+      &__link {
+        box-sizing: border-box;
+        padding: 9px 5px;
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        border: 1px solid #fff;
+        background-color: rgb(255, 206, 18);
+
+        font-family: 'Scada', sans-serif;
+        font-size: 24px;
+        color: rgb(53, 53, 53);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:focus,
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.section-for-msg {
+  padding: 35px 10px;
+  background: #e7e2e2;
+}
+
+/* --- */
+
+.section-price {
+  position: relative;
+  padding: 80px 10px;
+  background: #e7e2e2;
+}
+
+.block-price {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 80px 0 40px;
+  position: relative;
+  background: #fff;
+
+  border: 3px solid #ff0000;
+
+  &__icon-wrap {
+    box-sizing: border-box;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff0000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__image {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &__content {
+    text-align: center;
+    &__text {
+      font-family: 'Scada', "Times New Roman";
+      font-size: 30px;
+      line-height: 1;
+      text-align: center;
+      font-weight: bold;
+      font-style: normal;
+      color: #353535;
+    }
+    &__price-value {
+      font-family: 'Scada', sans-serif;
+      font-size: 48px;
+      line-height: 1;
+      text-align: center;
+      font-weight: bold;
+      font-style: normal;
+      color: #ff0000;
+    }
+    &__btn-wrap {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: translate(0, 50%);
+      &__btn {
+        margin: 0 auto;
+        display: block;
+        box-sizing: border-box;
+        padding: 10px 0;
+        border: 1px solid #353535;
+        border-radius: 5px;
+        background-color: rgb(255, 206, 18);
+        width: 70%;
+        font-family: 'Scada', sans-serif;
+        font-size: 24px;
+        color: rgb(49, 95, 108);
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        transition: all 0.3s ease;
+
+        &:focus,
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.section-info-about {
+  padding: 100px 10px;
+  box-sizing: border-box;
+  background-image: url('../img/image-2.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 90%;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__content-wrap {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 0;
+    border: 2px solid #fff;
+    margin: auto;
+    position: relative;
+
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2), inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+
+    &__content {
+      font-family: 'Scada', sans-serif;
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+    }
+    &__btn-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translate(0, 50%);
+      &__btn {
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 10px 0;
+        border: 2px solid #fff;
+        background-color: rgb(255, 206, 18);
+        max-width: 250px;
+        font-family: 'Scada', sans-serif;
+        font-size: 24px;
+        color: rgb(53, 53, 53);
+        font-weight: bold;
+        min-height: 48px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.3s ease;
+
+        &:focus,
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+/* footer style */
+.main-footer {
+  padding: 18px 20px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &__copyright {
+    flex: 0 0 35%;
+    font-family: 'Scada', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+
+    a {
+      font-family: 'Scada', sans-serif;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 1;
+      color: #fff;
+      text-decoration: none;
+      &:focus,
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    p{
+      padding: 0;
+      margin: 0;
+    }
+  }
+  &__social-wrap {
+    flex: 1 1 30%;
+  }
+  &__contacts-block {
+    flex: 1 1 50%;
+  }
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  &__item {
+    display: inline-block;
+    font-family: 'Scada', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+    border-right: 2px solid #fff;
+    &:last-child{
+      border-right: none;
+    }
+    &__link {
+      color: inherit;
+      font-family: 'Scada', sans-serif;
+      font-size: 13px;
+      line-height: 1;
+      text-decoration: none;
+      padding-right: 5px;
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+.social-block{
+  &__list{
+    padding: 0;
+    margin: 0;
+    &__item{
+      display: inline-block;
+      margin: 3px 4px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      list-style: none;
+      padding: 0;
+      font-size: 16px;
+      color: #fff;
+      background: #fff;
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      &--vk{
+        color: #fff;
+        background: #6a99c7;
+      }
+      &--facebook{
+        color: #fff;
+        background: #4f6499;
+      }
+      &--linkedin{
+        color: #fff;
+        background: #007bb7;
+      }
+      &--instagram{
+        color: #fff;
+        background: #3c75a0;
+      }
+      &--odnoklassniki{
+        color: #fff;
+        background: #ff9d42;
+      }
+      &--youtube{
+        font-size: 20px;
+        color: #fff;
+        background: #c73327;
+      }
+      &__link{
+        color: inherit;
+        line-height: 30px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.contacts-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    list-style: none;
+    padding: 0;
+    margin: 3px 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    &:focus i,
+    &:hover i{
+      transform: scale(1.1);
+    }
+    &:focus a,
+    &:hover a{
+      text-decoration: underline;
+    }
+    &__icon{
+      flex: 0 0 30px;
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 5px;
+      &--phone{
+        color: #fff;
+        background: #00ba79;
+      }
+      &--envelope{
+        color: #fff;
+        background: #7e4d12;
+      }
+    }
+    &__link{
+      font-family: 'Scada', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

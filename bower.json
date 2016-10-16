@@ -1,0 +1,8 @@
+{
+  "name": "Advance-Club",
+  "version": "1.0.1",
+  "dependencies": {
+    "fontawesome": "^4.5.0",
+    "normalize-css": "^4.0.0"
+  }
+}

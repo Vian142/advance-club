@@ -1,23 +1,220 @@
 @media screen and (max-width: 1200px) {
-  html{
+  html {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 968px) {
-  html{
-    font-size: 13px;
+  html {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  html{
-    font-size: 12px;
+  html {
+    font-size: 13px;
   }
+  /* header */
+  .main-header__top-block {
+    flex-wrap: wrap;
+    &__logo-container {
+      flex: 1 1 20%;
+      order: 1;
+      display: flex;
+      justify-content: center;
+    }
+    &__content {
+      flex: 1 1 60%;
+      order: 3;
+    }
+    &__additional-block {
+      flex: 1 1 20%;
+      order: 2;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .section-address-date {
+    flex-wrap: wrap;
+    &__address-block {
+      flex-basis: 100%;
+      text-align: center;
+      order: 2;
+    }
+    &__icon-block {
+      flex-basis: 100px;
+      width: 100px;
+      height: 100px;
+      order: 0;
+      margin-bottom: 10px;
+    }
+    &__date-block {
+      flex-basis: 100%;
+      text-align: center;
+      order: 2;
+      padding-top: 10px;
+    }
+  }
+  .section-subscription {
+    align-items: flex-end;
+    &__content {
+      &__title {
+        padding: 5px 0;
+      }
+      &__form {
+        justify-content: center;
+        flex-wrap: wrap;
+        &__input {
+          flex: 1 1 30%;
+          height: 40px;
+          max-width: 200px;
+          font-size: 16px;
+        }
+        &__btn {
+          flex: 1 1 100%;
+          font-size: 16px;
+          height: 40px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  /**/
+  .practice-for-list {
+    flex-wrap: nowrap;
+    &__item {
+      flex: 1 1 30%;
+      &__icon-block {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  /* --- */
+
+  /* footer-media */
+  .main-footer {
+    flex-wrap: wrap;
+    &__copyright {
+      flex: 1 1 50%;
+    }
+    &__social-wrap {
+      flex: 1 1 50%;
+    }
+    &__contacts-block {
+      padding: 10px;
+      flex: 1 1 100%;
+    }
+    .contacts-list {
+      justify-content: center;
+    }
+  }
+
+  .block-message {
+    padding-left: 5px;
+    padding-right: 5px;
+    &__image-wrap {
+      flex: 0 0 100px;
+      width: 100px;
+      height: 100px;
+    }
+    &__content {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1.6rem;
+    }
+  }
+
+  .lesson-schedule-columns {
+    flex-wrap: wrap;
+    &__item {
+      border-right: 0;
+      flex-basis: 48%;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      &:after {
+        content: '';
+        display: block;
+        margin: 10px auto 0;
+        width: 100px;
+        height: 0;
+        border-bottom: 2px dashed #fff;
+      }
+    }
+  }
+
+  .block-message-gift {
+    flex-wrap: wrap;
+    flex-direction: column;
+    &__image-wrap {
+      flex: 0 0 100px;
+      height: 100px;
+      width: 100px;
+    }
+    &__content {
+      text-align: center;
+    }
+  }
+
+  .section-info-about {
+    background-size: cover;
+    background-position: 0 0;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
-  html{
+  html {
     font-size: 11px;
   }
+  .section-subscription {
+    &__content {
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
+
+  /**/
+  .practice-for-list {
+    flex-wrap: wrap;
+    &__item {
+      flex: 1 1 100%;
+      &__icon-block {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .lesson-schedule-columns {
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: 100%;
+      margin-bottom: 35px;
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .main-footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    &__copyright {
+      flex: 1 1 100%;
+    }
+    &__social-wrap {
+      padding-top: 15px;
+      flex: 1 1 100%;
+    }
+    &__contacts-block {
+      flex: 1 1 100%;
+    }
+  }
+
 }

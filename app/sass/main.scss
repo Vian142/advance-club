@@ -40,7 +40,7 @@
 
       &__top-title {
         font-family: 'Scada', sans-serif;
-        font-size: 28px;
+        font-size: 2rem;
         color: #353535;
         font-style: normal;
         font-weight: bold;
@@ -79,7 +79,7 @@
           }
           &__link {
             font-family: 'Scada', sans-serif;
-            font-size: 18px;
+            font-size: 1.285rem;
             font-weight: bold;
             color: #da2b32;
             text-decoration: none;
@@ -140,7 +140,7 @@
         position: relative;
         font-family: 'Scada', sans-serif;
         text-align: center;
-        font-size: 14px;
+        font-size: 1rem;
         padding: 0 0 10px 0;
         color: #fff;
         font-weight: bold;
@@ -178,7 +178,7 @@
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
     &__title {
       font-family: 'Scada', sans-serif;
-      font-size: 48px;
+      font-size: 3.428rem;
       font-weight: bold;
       line-height: 1;
       text-transform: uppercase;
@@ -191,7 +191,7 @@
     }
     &__description {
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size: 1.714rem;
       font-weight: bold;
       line-height: 1.2;
       padding: 5px 0;
@@ -211,13 +211,13 @@
     padding: 0 5px;
     text-align: right;
     font-family: 'Scada', sans-serif;
-    font-size: 30px;
+    font-size: 2.142rem;
     line-height: 1.12;
     color: #fff;
     font-weight: bold;
 
     &__address-home {
-      font-size: 36px;
+      font-size: 2.571rem;
     }
   }
   &__icon-block {
@@ -238,7 +238,7 @@
     padding: 0 5px;
     text-align: left;
     font-family: 'Scada', sans-serif;
-    font-size: 30px;
+    font-size: 2.142rem;
     line-height: 1.12;
     color: #fff;
     font-weight: bold;
@@ -265,7 +265,7 @@
     flex-direction: column;
     justify-content: space-between;
     &__title {
-      font-size: 30px;
+      font-size: 2.142rem;
       font-family: 'Scada', sans-serif;
       color: rgb(255, 255, 255);
       font-weight: bold;
@@ -287,7 +287,7 @@
         width: 100%;
         max-width: 250px;
 
-        font-size: 24px;
+        font-size: 1.714rem;
         font-family: 'Scada', sans-serif;
         color: rgb(150, 151, 153);
         line-height: 1.2;
@@ -302,7 +302,7 @@
         width: 100%;
         max-width: 250px;
 
-        font-size: 24px;
+        font-size: 1.714rem;
         font-family: 'Scada', sans-serif;
         color: rgb(53, 53, 53);
         font-weight: bold;
@@ -325,7 +325,7 @@
   padding: 20px 5px 25px;
   background: #e7e2e2;
   &__title {
-    font-size: 30px;
+    font-size: 2.142rem;
     font-family: "Scada", sans-serif;
     color: rgb(53, 53, 53);
     font-weight: bold;
@@ -368,7 +368,7 @@
       padding: 15px 0 5px;
       margin: 0;
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size: 1.714rem;
       line-height: 1.2;
       text-align: center;
       font-weight: bold;
@@ -379,7 +379,7 @@
     &__description {
       padding: 5px 0;
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size: 1.714rem;
       line-height: 1.2;
       text-align: center;
       font-weight: bold;
@@ -421,7 +421,7 @@
   &__content {
     padding: 0 20px;
     font-family: 'Scada', sans-serif;
-    font-size: 30px;
+    font-size: 2.142rem;
     color: #e74c3c;
     text-transform: uppercase;
     line-height: 1.2;
@@ -430,7 +430,7 @@
 
     &__text-black{
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size:  1.714rem;
       line-height: 1;
       text-transform: none;
       color: #353535;
@@ -446,7 +446,7 @@
 
   &__content {
     font-family: 'Scada', sans-serif;
-    font-size: 24px;
+    font-size: 1.714rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -486,7 +486,7 @@
       margin: 5px auto 10px;
       max-width: 170px;
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size: 1.714rem;
       line-height: 1.2;
       color: #fff;
       text-align: center;
@@ -502,7 +502,7 @@
       color: #ffce12;
       &__date {
         font-family: 'Scada', sans-serif;
-        font-size: 30px;
+        font-size: 2.142rem;
         color: #ffce12;
         line-height: 1.2;
         font-weight: bold;
@@ -510,7 +510,7 @@
       }
       &__time {
         font-family: 'Scada', sans-serif;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: #ffce12;
         line-height: 1;
         font-weight: bold;
@@ -519,7 +519,7 @@
     }
     &__level {
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size: 1.714rem;
       color: #fff;
       text-align: center;
       line-height: 1;
@@ -535,7 +535,7 @@
       &__title-description {
         display: block;
         font-family: 'Scada', sans-serif;
-        font-size: 24px;
+        font-size: 1.714rem;
         text-align: center;
         text-transform: uppercase;
         margin: 0;
@@ -547,7 +547,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Scada', sans-serif;
-        font-size: 18px;
+        font-size: 1.285rem;
         text-align: center;
         color: #fff;
         line-height: 1;
@@ -569,7 +569,7 @@
         background-color: rgb(255, 206, 18);
 
         font-family: 'Scada', sans-serif;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: rgb(53, 53, 53);
         font-weight: bold;
         text-transform: uppercase;
@@ -621,7 +621,7 @@
   &__content {
     padding: 0 20px;
     font-family: 'Scada', sans-serif;
-    font-size: 30px;
+    font-size: 2.142rem;
     color: #e74c3c;
     text-transform: uppercase;
     line-height: 1.2;
@@ -630,7 +630,7 @@
 
     &__text-black{
       font-family: 'Scada', sans-serif;
-      font-size: 24px;
+      font-size: 1.714rem;
       line-height: 1;
       text-transform: none;
       color: #353535;
@@ -675,7 +675,7 @@
     text-align: center;
     &__text {
       font-family: 'Scada', sans-serif;
-      font-size: 36px;
+      font-size: 2.571rem;
       line-height: 1;
       text-align: center;
       font-weight: normal;
@@ -684,7 +684,7 @@
     }
     &__price-value {
       font-family: 'Scada', sans-serif;
-      font-size: 48px;
+      font-size: 3.428rem;
       line-height: 1;
       text-align: center;
       font-weight: bold;
@@ -707,7 +707,7 @@
         background-color: rgb(255, 206, 18);
         width: 70%;
         font-family: 'Scada', sans-serif;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: rgb(49, 95, 108);
         font-weight: bold;
         text-decoration: none;
@@ -726,7 +726,7 @@
 }
 
 .section-info-about {
-  padding: 0px 10px;
+  padding: 0 10px;
   min-height: 400px;
   box-sizing: border-box;
   background-image: url('../img/image-2.jpg');
@@ -750,7 +750,7 @@
 
     &__content {
       font-family: 'Scada', sans-serif;
-      font-size: 30px;
+      font-size: 2.142rem;
       color: rgb(255, 255, 255);
       font-weight: bold;
       text-transform: uppercase;
@@ -772,7 +772,7 @@
         background-color: rgb(255, 206, 18);
         max-width: 250px;
         font-family: 'Scada', sans-serif;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: rgb(53, 53, 53);
         font-weight: bold;
         min-height: 48px;
@@ -803,14 +803,14 @@
   &__copyright {
     flex: 0 0 35%;
     font-family: 'Scada', sans-serif;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: normal;
     line-height: 1;
     color: #fff;
 
     a {
       font-family: 'Scada', sans-serif;
-      font-size: 13px;
+      font-size: 0.8rem;
       font-weight: normal;
       line-height: 1;
       color: #fff;
@@ -960,7 +960,7 @@
     }
     &__link{
       font-family: 'Scada', sans-serif;
-      font-size: 16px;
+      font-size: 1.142rem;
       font-weight: bold;
       color: #fff;
       text-decoration: none;
